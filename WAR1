@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+
+<?php
+//1.1
+echo ("Witaj Świecie PHP!!!!");
+echo("<br>");
+
+//1.2
+$a = 5;
+$b = 4;
+$c= $a*$b;
+echo("Pole prostokąta wynosi: $c");
+echo("<br>");
+
+//1.3
+echo  round(sqrt(10));
+echo("<br>");
+
+//1.4
+$d = 3;
+$e = 6;
+$iResult1 = $d + $e;
+echo("$iResult1");
+echo("<br>");
+$iResult2 = $d - $e;
+echo("$iResult2");
+echo("<br>");
+$iResult3 = $d * $e;
+echo("$iResult3");
+echo("<br>");
+$iResult4 = $d % $e;
+echo("$iResult4");
+echo("<br>");
+
+//1.5
+$string1 = "Michal";
+$string2 = "Pies";
+echo('"%'. $string1 .' '. $string2 .'%&#"');
+
+//1.7
+$m = 10;
+
+    switch($m) {
+        case 1: {
+            echo("Styczeń: 31 dni");
+            break;
+        }
+
+        case 2: {
+            echo("Luty: 28 dni");
+            break;
+        }
+
+        case 3: {
+            echo("Marzec: 31 dni");
+            break;
+        }
+
+        case 4: {
+            echo("Kwiecień: 30 dni");
+            break;
+        }
+
+        case 5: {
+            echo("Maj: 31 dni");
+            break;
+        }
+
+        case 6: {
+            echo("Czerwiec: 30 dni");
+            break;
+        }
+
+        case 7: {
+            echo("Lipiec: 31 dni");
+            break;
+        }
+
+        case 8: {
+            echo("Sierpień: 31 dni");
+            break;
+        }
+
+        case 9: {
+            echo("Wrzesień: 30 dni");
+            break;
+        }
+
+        case 10: {
+            echo("Październik: 31 dni");
+            break;
+        }
+
+        case 11: {
+            echo("Listopad: 30 dni");
+            break;
+        }
+
+        case 12: {
+            echo("Grudzień: 31 dni");
+            break;
+        }
+
+        default: {
+            echo("BŁĄD");
+            break;
+        }
+    }
+
+//1.6
+$bok1 = 1;
+$bok2 = 2;
+$bok3 = 3;
+if($bok1+$bok2>$bok3) {
+echo("Trójkąt da się zbudować");
+} else {
+echo("błąd");
+}
+if($bok1+$bok3>$bok2) {
+echo("Trójkąt da się zbudować");
+} else {
+echo("błąd");
+}
+if($bok2+$bok3>$bok1) {
+    echo("Trójkąt da się zbudować");
+} else {
+    echo("błąd");
+}
+
+//1.10
+$wysokosc = 3;
+if($_POST['wysokosc'])
+ {
+
+$wysokosc = $_POST['wysokosc'];
+
+for ($i = 1; $i <= $wysokosc; $i++) {
+    for ($j = 1; $j <= $wysokosc - $i; $j++) {
+        echo ' ';
+    }
+	for ($j =1; $j <= 2 * $i - 1; $j++) {
+		echo '*';
+	}
+    echo "\n";
+}
+ }
+
+//1.8
+$liczbaA = 4;
+$liczbaB = 20;
+$liczbaC = 6;
+$liczbaD = 9;
+$liczbaE = 12;
+$tablica = array('4','20','6','9','12');
+rsort($tablica);
+reset($tablica);
+foreach($tablica as $liczba) {
+    echo "$liczba<br>\n";
+}
+
+
+
+?>
+</body>
+</html>
